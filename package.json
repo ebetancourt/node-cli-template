@@ -1,0 +1,38 @@
+{
+  "name": "template-cli",
+  "version": "0.0.1",
+  "description": "This is just a template for a CLI tool written in TypeScript with Node.js",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@inquirer/prompts": "^3.3.0",
+    "axios": "^1.5.0",
+    "commander": "^11.0.0",
+    "dotenv": "^16.3.1",
+    "node-localstorage": "^3.0.5",
+    "sequelize": "^6.33.0",
+    "sequelize-cli": "^6.6.1",
+    "sequelize-typescript": "^2.1.5",
+    "sqlite3": "^5.1.6",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2"
+  },
+  "scripts": {
+    "clean": "rm -rf build",
+    "migrate": "npx sequelize-cli db:migrate",
+    "build": "yarn run clean && tsc --build tsconfig.json",
+    "help": "yarn tsx ./src/index.ts",
+    "com": "yarn tsx ./src/index.ts com",
+    "cnt": "yarn tsx ./src/index.ts cnt"
+  },
+  "engines": {
+    "node": ">=18.12.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "8.2.6",
+    "@types/node": "^20.6.3",
+    "@types/node-localstorage": "^1.3.1"
+  }
+}
