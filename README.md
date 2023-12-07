@@ -12,4 +12,12 @@ This is a simple starter project for creating a CLI with Node. Includes, out of 
 - interactively prompt the user with [Inquirer.js](https://github.com/SBoudrias/Inquirer.js)
 - API calls over http(s) via Axios
 
-Requires Node 18 or higher.
+> [!IMPORTANT]
+> Requires Node 18 or higher.
+
+---
+
+## TODO:
+
+- [ ] Integrate [Ink: 🌈 React for interactive command-line apps](https://github.com/vadimdemedes/ink)
+- [ ] Devise and document a method to include the CLI within other apps (for example to use this as a very nice task runner)
